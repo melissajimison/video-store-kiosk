@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   //   return ['Marie Curie', 'Mae Jemison', 'Albert Hofmann'];
   // }
 
-  model: function() {
-    return this.store.find('movie');
+  model() {
+    return this.store.findAll('movies');
   }
 });
