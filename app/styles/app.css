@@ -1,3 +1,7 @@
+[data-ember-action]:not(:disabled) {
+  cursor: pointer;
+}
+
 img {
   height: 300px;
   margin-right: auto;

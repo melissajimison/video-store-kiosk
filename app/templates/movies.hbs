@@ -1,7 +1,7 @@
 <div class="movies">
 {{#each model as |movie|}}
-<div class="movie" {{action "info"}}>
-  <img src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
+<div class="movie">
+  <img {{action "info"}} src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
 </div>
 
 
