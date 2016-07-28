@@ -1,0 +1,21 @@
+img {
+  height: 300px;
+  margin-right: auto;
+}
+
+.movie {
+  width: 33%;
+  display: inline-block;
+
+}
+
+.info {
+  margin-left: auto;
+  position: absolute;
+  z-index: 2;
+  width: 18.5rem;
+  height: 18.5rem;
+  background-color: red;
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+}

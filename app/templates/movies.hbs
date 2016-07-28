@@ -1,6 +1,9 @@
-<ul>
+<div class="movies">
 {{#each model as |movie|}}
-<li>
+<div class="movie">
+  <img src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
+</div>
+  <div class="info">
        <h2>{{movie.title}} </h2>
        {{movie.release_date}}
        <br>
@@ -9,11 +12,10 @@
        {{movie.inventory}}
        <br>
        {{movie.poster_filename}}
-      <img src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
        {{movie.createdAt}}
        {{movie.updatedAt}}
-     </li>
+     </div>
 {{/each}}
 
 
-</ul>
+</div>

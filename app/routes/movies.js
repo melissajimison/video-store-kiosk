@@ -1,11 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  // model() {
-  //   return ['Marie Curie', 'Mae Jemison', 'Albert Hofmann'];
-  // }
-
+  ajax: Ember.inject.service(),
   model() {
-    return this.store.findAll('movies');
+    return this.get('ajax').request('http://localhost:3000/');
   }
 });
