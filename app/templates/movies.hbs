@@ -1,4 +1,19 @@
-<h2>PeopleTracker</h2>
+<ul>
 {{#each model as |movie|}}
-       <h2>{{movie.title}} {{movie.inventory}}</h2>
+<li>
+       <h2>{{movie.title}} </h2>
+       {{movie.release_date}}
+       <br>
+       {{movie.overview}}
+       <br>
+       {{movie.inventory}}
+       <br>
+       {{movie.poster_filename}}
+      <img src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
+       {{movie.createdAt}}
+       {{movie.updatedAt}}
+     </li>
 {{/each}}
+
+
+</ul>

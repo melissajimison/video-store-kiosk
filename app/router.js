@@ -10,10 +10,3 @@ Router.map(function() {
 });
 
 export default Router;
-
-
-// export default Router.map(function() {
-//   this.resource('graduates', function() {
-//     this.resource('graduate', { path: '/:graduate_id' });
-//   });
-// });
