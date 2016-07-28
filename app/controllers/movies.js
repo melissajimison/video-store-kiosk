@@ -1,15 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  isExpanded: false,
-
     actions: {
-      showInfo: function() {
-        this.set('isExpanded', true);
-      },
-
-      hideInfo: function() {
-        this.set('isExpanded', false);
+      Info: function() {
+        this.toggleProperty('isExpanded');
       }
+
+
+      // next: function() {
+      //   ajax: Ember.inject.service(),
+      //   model() {
+      //     return this.get('ajax').request('http://localhost:3000/?page=5&size=10');
+      //   };
+      //
+      // };
     }
   });

@@ -1,14 +1,11 @@
 <div class="movies">
 {{#each model as |movie|}}
-<div class="movie">
+<div class="movie" {{action "Info"}}>
   <img src="http://localhost:3000/images/posters/{{movie.poster_filename}}">
 </div>
 
 
-
 {{#if isExpanded}}
-<div class='body'>{{body}}</div>
-  <button {{action "hideInfo"}}>Hide Body</button>
   <div class="body">
          <h2>{{movie.title}} </h2>
          {{movie.release_date}}
@@ -21,14 +18,12 @@
          {{movie.createdAt}}
          {{movie.updatedAt}}
      </div>
-{{else}}
-  <button {{action "showInfo"}}>Show Body</button>
 {{/if}}
 
 
 {{/each}}
-
 </div>
+
 
 <button {{action 'previous'}}>Previous Page</button>
 
